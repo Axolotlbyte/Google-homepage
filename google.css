@@ -1,16 +1,21 @@
-.head {
+
+.header {
   float: right;
+  padding-top: 8px;
+  padding-right: 5px;
 }
- .bluepad{
-   background-color: rgb(29, 29, 252);
+
+.bluepad{
+   background-color: rgb(63, 63, 248);
    border: 4px rgb(17, 17, 17);
-   border-radius: 15px;
+   border-radius: 5px;
    padding-left: 12px;
    color: #ffffff;
    height: 30px;
+   width: auto;
 }
 
-.head a {
+.header a {
   display: inline;
   text-align: center;
   padding: 14px 12px;
@@ -18,7 +23,7 @@
   color: black;
   text-decoration: none;
 }
-.head a:hover{
+.header a:hover{
   text-decoration: underline;
 }
 
@@ -51,71 +56,50 @@ li :hover{
 }
 
 .logo{
-   position: fixed;
-   top: 30%;
-   width: 292px;
-   height: auto;
-   margin-left: 40%;
-   margin-right: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px;
+  padding-top: 200px;
+  padding-bottom: 25px;
 }
+
 .bar{
-  position: absolute;
-  display: block;
-  margin-top: auto;
-  margin-left: 35%;
-  margin-right: auto;
-  top: 50%;
-  
+  margin:auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  padding-bottom: 100px;
 }
-.barg{
-  position: absolute;
-  display: block;
-  margin-top: auto;
-  margin-left: 35.5%;
-  margin-right: auto;
-  top: 51.2%;
-  
-}
+
+
 .search{
   border: 4px rgb(17, 17, 17);
   border-radius: 50px;
-  height: 40px;
-  width: 500px;
-  outline: 4px;
-  outline-color: gray;
-  background-color: #e2dfdf;
-  padding: 2px 23px 2px 30px;
+  height: 44px;
+  width: 580px;
+  border: 1px solid rgb(204, 203, 203);
+  background-color: #ffffff;
+  padding: 2px 42px 2px 40px;
+  outline: none;
 }
-.ico-mglass {
-  position:relative;
-  display:inline-block;
-  background: #fff;
-  border-radius: 30px;
-  height: 6px;
-  width: 6px;
-  border: 2px solid #888;
-  
-  &:after {
-    content: "";
-    height: 2px;
-    width: 6px;
-    background: #888;
-    position:absolute;
-    top:7px;
-    left:5px;
-    -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-  }
-  
+
+.search-wrapper {
+  position: relative;
 }
-.bar :hover{
-  box-shadow: 2px 2px 3px 3px rgb(155, 153, 153);
+
+.search-wrapper img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.search:hover {
+  box-shadow: 0px 0px 0px 2px rgb(218, 214, 214);
 }
 
 .foot{
-
-    position: fixed;
-    bottom: 0;
+  position: fixed;
+  bottom: 0;
 }
